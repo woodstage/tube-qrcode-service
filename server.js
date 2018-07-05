@@ -7,8 +7,7 @@ const images = new Map();
 
 // Create a server with a host and port
 const server=Hapi.server({
-    host:'15.38.224.78',
-    port: 8080
+    port: process.env.port
 });
 
 // Add the route
